@@ -15,6 +15,9 @@ https://github.com/chaosdorf/sonnenstr58/issues/8
 ### Pinout
 ![Schloss Pinout](src/Schloss-Pinout.png)
 
+
+| Pin-Nummer | Kabel-Farbe | Funktion |
+|--|--|--|
 | 1 | Weiß + |  |
 | 2 | Rot - | Geschlossen / Offen |
 | 3 | Grün/Rot | Schließzylinder betätigt |
@@ -25,4 +28,4 @@ https://github.com/chaosdorf/sonnenstr58/issues/8
 | 8 | Braun |  Steuerfalle gedrückt |
 | 9 | Orange | Riegel eingefahren | 
 | 10 | Gelb | Gemeinsamer Kontakt für Steuerfalle gedrückt / Riegel eingefahren | 
-| 11 | Grau / Pink | 
+| 11 | Grau / Pink | Sabotage schlaufe
