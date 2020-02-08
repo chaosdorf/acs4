@@ -8,7 +8,7 @@ https://github.com/chaosdorf/sonnenstr58/issues/8
 ## Hardware
 Die Steuerung ist auf zwei Platinen aufgeteilt. 
 
-[Blockschaltbild](src/Blockschaltbild.pdf)
+[Blockschaltbild](Blockbild_Uebersicht_rev04.pdf)
 
 ### Master-Board
 - Steuert die Aktoren an 12V Output
