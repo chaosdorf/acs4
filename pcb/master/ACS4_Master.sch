@@ -1,0 +1,2838 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 11975 10375 0    200  ~ 0
+Türe Steuerung Master
+$Comp
+L Connector:Conn_01x20_Female J?
+U 1 1 5E388765
+P 1450 2675
+F 0 "J?" H 1344 3760 50  0000 C CNN
+F 1 "Olimex Conector" V 1575 2625 50  0000 C CNN
+F 2 "" H 1450 2675 50  0001 C CNN
+F 3 "~" H 1450 2675 50  0001 C CNN
+	1    1450 2675
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1775 1825 1775
+Wire Wire Line
+	1825 1775 1825 1550
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5E38891C
+P 1825 1550
+F 0 "#PWR?" H 1825 1400 50  0001 C CNN
+F 1 "+3.3VA" H 1725 1700 50  0000 C CNN
+F 2 "" H 1825 1550 50  0001 C CNN
+F 3 "" H 1825 1550 50  0001 C CNN
+	1    1825 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1875 1825 1875
+Wire Wire Line
+	1825 1875 1825 3575
+Wire Wire Line
+	1650 3575 1825 3575
+Connection ~ 1825 3575
+Wire Wire Line
+	1825 3575 1825 3800
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E388B3D
+P 1825 3800
+F 0 "#PWR?" H 1825 3800 30  0001 C CNN
+F 1 "GND" H 1825 3730 30  0001 C CNN
+F 2 "" H 1825 3800 60  0000 C CNN
+F 3 "" H 1825 3800 60  0000 C CNN
+	1    1825 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 3675 2025 3675
+Wire Wire Line
+	2025 3675 2025 1550
+$Comp
+L power:+5VA #PWR?
+U 1 1 5E388B96
+P 2025 1550
+F 0 "#PWR?" H 2025 1400 50  0001 C CNN
+F 1 "+5VA" H 2025 1700 50  0000 C CNN
+F 2 "" H 2025 1550 50  0001 C CNN
+F 3 "" H 2025 1550 50  0001 C CNN
+	1    2025 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 1975 2450 1975
+Text Notes 2050 1975 0    50   ~ 0
+*ESP_EN
+Text Notes 2050 2075 0    50   ~ 0
+*GPIO5
+Text Notes 2050 2775 0    50   ~ 0
+GPIO16
+Text Notes 2050 2875 0    50   ~ 0
+GPIO17
+Text Notes 2050 2975 0    50   ~ 0
+GPIO32
+Text Notes 2050 3075 0    50   ~ 0
+*LED
+Text Notes 2050 3175 0    50   ~ 0
+*BUT1 
+Text Notes 2050 3275 0    50   ~ 0
+GPI35
+Text Notes 2050 3375 0    50   ~ 0
+GPI36
+Text Notes 2050 3475 0    50   ~ 0
+*GPI39
+Wire Wire Line
+	6700 9500 6125 9500
+Wire Wire Line
+	1650 2875 2525 2875
+Text GLabel 4300 9500 0    50   Input ~ 0
+RS485_B
+Text GLabel 4300 9325 0    50   Input ~ 0
+PSU_BUS+
+Text GLabel 4300 9975 0    50   Input ~ 0
+PSU_BUS-
+Wire Wire Line
+	4300 9325 4400 9325
+Wire Wire Line
+	4400 9325 4400 9125
+Wire Wire Line
+	4300 9975 4375 9975
+Wire Wire Line
+	4375 9975 4375 10125
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5E38E272
+P 5725 9050
+F 0 "#PWR?" H 5725 8900 50  0001 C CNN
+F 1 "+3.3VA" H 5625 9200 50  0000 C CNN
+F 2 "" H 5725 9050 50  0001 C CNN
+F 3 "" H 5725 9050 50  0001 C CNN
+	1    5725 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E38E331
+P 4375 10300
+F 0 "#PWR?" H 4375 10300 30  0001 C CNN
+F 1 "GND" H 4375 10230 30  0001 C CNN
+F 2 "" H 4375 10300 60  0000 C CNN
+F 3 "" H 4375 10300 60  0000 C CNN
+	1    4375 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E38E3D4
+P 5725 10300
+F 0 "#PWR?" H 5725 10300 30  0001 C CNN
+F 1 "GND" H 5725 10230 30  0001 C CNN
+F 2 "" H 5725 10300 60  0000 C CNN
+F 3 "" H 5725 10300 60  0000 C CNN
+	1    5725 10300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5725 10300 5725 10200
+Wire Wire Line
+	5725 9100 5725 9050
+$Comp
+L power:+12C #PWR?
+U 1 1 5E38EF3B
+P 4400 8925
+F 0 "#PWR?" H 4400 8775 50  0001 C CNN
+F 1 "+12C" H 4415 9098 50  0000 C CNN
+F 2 "" H 4400 8925 50  0001 C CNN
+F 3 "" H 4400 8925 50  0001 C CNN
+	1    4400 8925
+	1    0    0    -1  
+$EndComp
+Text GLabel 4300 9800 0    50   Input ~ 0
+RS485_A
+Text Notes 3775 10325 1    50   ~ 0
+zur Außeneinheit IButton Reader
+Wire Wire Line
+	1650 3075 2525 3075
+Wire Wire Line
+	1650 3175 2525 3175
+Wire Wire Line
+	1650 3475 2525 3475
+Text Notes 2950 3175 0    50   ~ 0
+*BUT1 fest mit Taser BUT1 verbunden 
+Text Notes 2975 3075 0    50   ~ 0
+LED /  RS485 senden 
+Text Notes 2950 1975 0    50   ~ 0
+*ESP_EN  fest mit Taser RST1 verbunden 
+Wire Wire Line
+	1650 3275 2525 3275
+Wire Wire Line
+	1650 3375 2525 3375
+$Comp
+L Device:R R?
+U 1 1 5E39B6A7
+P 12850 3425
+F 0 "R?" V 12800 3575 50  0000 C CNN
+F 1 "R" V 12850 3375 50  0000 C CNN
+F 2 "" V 12780 3425 50  0001 C CNN
+F 3 "~" H 12850 3425 50  0001 C CNN
+	1    12850 3425
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E39BC7D
+P 13750 975
+F 0 "R?" V 13675 1125 50  0000 C CNN
+F 1 "R" V 13750 925 50  0000 C CNN
+F 2 "" V 13680 975 50  0001 C CNN
+F 3 "~" H 13750 975 50  0001 C CNN
+	1    13750 975 
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC546 Q?
+U 1 1 5E39CA06
+P 13275 3425
+F 0 "Q?" H 13466 3471 50  0000 L CNN
+F 1 "BC546" H 13466 3380 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 13475 3350 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 13275 3425 50  0001 L CNN
+	1    13275 3425
+	1    0    0    -1  
+$EndComp
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E39CA41
+P 13400 5150
+F 0 "#PWR?" H 13400 5150 30  0001 C CNN
+F 1 "GND" H 13400 5080 30  0001 C CNN
+F 2 "" H 13400 5150 60  0000 C CNN
+F 3 "" H 13400 5150 60  0000 C CNN
+	1    13400 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 5E39EF77
+P 13400 1075
+F 0 "Q?" V 13575 1225 50  0000 C CNN
+F 1 "IRF7404" V 13575 825 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 13600 1000 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 13400 1075 50  0001 L CNN
+	1    13400 1075
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	13700 1275 13700 1650
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E3A1BBC
+P 13700 1650
+F 0 "#PWR?" H 13700 1650 30  0001 C CNN
+F 1 "GND" H 13700 1580 30  0001 C CNN
+F 2 "" H 13700 1650 60  0000 C CNN
+F 3 "" H 13700 1650 60  0000 C CNN
+	1    13700 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E3A1C08
+P 13075 1150
+F 0 "R?" H 13100 1000 50  0000 L CNN
+F 1 "R" V 13075 1075 50  0000 L CNN
+F 2 "" V 13005 1150 50  0001 C CNN
+F 3 "~" H 13075 1150 50  0001 C CNN
+	1    13075 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E3A1E32
+P 13400 1525
+F 0 "R?" H 13450 1400 50  0000 L CNN
+F 1 "R" V 13400 1450 50  0000 L CNN
+F 2 "" V 13330 1525 50  0001 C CNN
+F 3 "~" H 13400 1525 50  0001 C CNN
+	1    13400 1525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 1275 13400 1325
+Wire Wire Line
+	13075 1300 13075 1325
+Wire Wire Line
+	13075 1325 13400 1325
+Connection ~ 13400 1325
+Wire Wire Line
+	13400 1325 13400 1375
+$Comp
+L Transistor_BJT:BC546 Q?
+U 1 1 5E3A4878
+P 13300 1875
+F 0 "Q?" H 13491 1921 50  0000 L CNN
+F 1 "BC546" H 13491 1830 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 13500 1800 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 13300 1875 50  0001 L CNN
+	1    13300 1875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 2075 13400 2100
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E3A54B9
+P 13400 2100
+F 0 "#PWR?" H 13400 2100 30  0001 C CNN
+F 1 "GND" H 13400 2030 30  0001 C CNN
+F 2 "" H 13400 2100 60  0000 C CNN
+F 3 "" H 13400 2100 60  0000 C CNN
+	1    13400 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13100 1875 13075 1875
+Wire Wire Line
+	13000 3425 13075 3425
+$Comp
+L Device:R R?
+U 1 1 5E3A8BDA
+P 12925 1875
+F 0 "R?" V 12875 2025 50  0000 C CNN
+F 1 "R" V 12925 1825 50  0000 C CNN
+F 2 "" V 12855 1875 50  0001 C CNN
+F 3 "~" H 12925 1875 50  0001 C CNN
+	1    12925 1875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12500 3425 12700 3425
+Wire Wire Line
+	1650 2075 2450 2075
+Text Label 2525 2775 0    50   ~ 0
+RxD1
+Text Label 2525 2875 0    50   ~ 0
+TxD1
+Text Label 6700 9500 0    50   ~ 0
+RxRS485
+Text Label 6700 9800 0    50   ~ 0
+TxD1
+Text Label 2525 3075 0    50   ~ 0
+TxD1_DE
+Text Label 6700 9700 0    50   ~ 0
+TxD1_DE
+$Comp
+L Interface_UART:MAX485E U?
+U 1 1 5E5DC81C
+P 5725 9600
+F 0 "U?" H 5900 10075 50  0000 C CNN
+F 1 "MAX485E" H 5525 10075 50  0000 C CNN
+F 2 "" H 5725 8900 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 5725 9650 50  0001 C CNN
+	1    5725 9600
+	-1   0    0    -1  
+$EndComp
+Text GLabel 4300 10125 0    50   Input ~ 0
+Schirm
+Wire Wire Line
+	4300 10125 4375 10125
+Connection ~ 4375 10125
+Wire Wire Line
+	4375 10125 4375 10300
+Wire Notes Line
+	4325 9200 4325 10225
+Wire Notes Line
+	4325 10225 3800 10225
+Wire Notes Line
+	3800 10225 3800 9200
+Wire Notes Line
+	3800 9200 4325 9200
+Wire Wire Line
+	6125 9800 6700 9800
+Text Label 7050 1750 0    50   ~ 0
+TxD1
+Wire Wire Line
+	6475 1750 7050 1750
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5E605414
+P 9550 1200
+F 0 "#PWR?" H 9550 1050 50  0001 C CNN
+F 1 "+3.3VA" V 9475 1250 50  0000 C CNN
+F 2 "" H 9550 1200 50  0001 C CNN
+F 3 "" H 9550 1200 50  0001 C CNN
+	1    9550 1200
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9975 1375 10150 1375
+$Comp
+L Device:Crystal_Small Y?
+U 1 1 5E6069BD
+P 10250 1675
+F 0 "Y?" V 10204 1763 50  0000 L CNN
+F 1 "8Mhz" V 10425 1650 50  0000 L CNN
+F 2 "" H 10250 1675 50  0001 C CNN
+F 3 "~" H 10250 1675 50  0001 C CNN
+	1    10250 1675
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9975 1575 10250 1575
+Wire Wire Line
+	9975 1775 10250 1775
+Connection ~ 10250 1775
+Wire Wire Line
+	10250 1775 10425 1775
+Wire Wire Line
+	10250 1575 10425 1575
+Connection ~ 10250 1575
+$Comp
+L Device:C 22pF
+U 1 1 5E60B70C
+P 10575 1575
+F 0 "22pF" V 10625 1425 50  0000 C CNN
+F 1 "C" V 10625 1650 50  0000 C CNN
+F 2 "" H 10613 1425 50  0001 C CNN
+F 3 "~" H 10575 1575 50  0001 C CNN
+	1    10575 1575
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:C 22pF
+U 1 1 5E60B7CF
+P 10575 1775
+F 0 "22pF" V 10625 1625 50  0000 C CNN
+F 1 "C" V 10650 1850 50  0000 C CNN
+F 2 "" H 10613 1625 50  0001 C CNN
+F 3 "~" H 10575 1775 50  0001 C CNN
+	1    10575 1775
+	0    -1   1    0   
+$EndComp
+Connection ~ 10150 1375
+$Comp
+L Device:C 0,1uF
+U 1 1 5E60CF18
+P 10575 1375
+F 0 "0,1uF" V 10650 1225 50  0000 C CNN
+F 1 "C" V 10625 1450 50  0000 C CNN
+F 2 "" H 10613 1225 50  0001 C CNN
+F 3 "~" H 10575 1375 50  0001 C CNN
+	1    10575 1375
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	10425 1375 10150 1375
+Wire Wire Line
+	10725 1375 10850 1375
+Wire Wire Line
+	10725 1775 10850 1775
+Wire Wire Line
+	10850 1775 10850 1575
+Wire Wire Line
+	10725 1575 10850 1575
+Connection ~ 10850 1575
+Wire Wire Line
+	10850 1575 10850 1375
+Wire Wire Line
+	10850 1975 10850 1775
+Connection ~ 10850 1775
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E61433C
+P 10850 1975
+F 0 "#PWR?" H 10850 1975 30  0001 C CNN
+F 1 "GND" H 10850 1905 30  0001 C CNN
+F 2 "" H 10850 1975 60  0000 C CNN
+F 3 "" H 10850 1975 60  0000 C CNN
+	1    10850 1975
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R 10K
+U 1 1 5E6198E1
+P 9825 1200
+F 0 "10K" V 9825 1200 50  0000 C CNN
+F 1 "R" V 9875 1350 50  0000 C CNN
+F 2 "" V 9755 1200 50  0001 C CNN
+F 3 "~" H 9825 1200 50  0001 C CNN
+	1    9825 1200
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	9975 1200 10150 1200
+Wire Wire Line
+	10150 1200 10150 1375
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E621EAF
+P 5875 4625
+F 0 "#PWR?" H 5875 4625 30  0001 C CNN
+F 1 "GND" H 5875 4555 30  0001 C CNN
+F 2 "" H 5875 4625 60  0000 C CNN
+F 3 "" H 5875 4625 60  0000 C CNN
+	1    5875 4625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5875 4625 5875 4450
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5E63463B
+P 10100 3600
+F 0 "#PWR?" H 10100 3450 50  0001 C CNN
+F 1 "+3.3VA" H 10000 3750 50  0000 C CNN
+F 2 "" H 10100 3600 50  0001 C CNN
+F 3 "" H 10100 3600 50  0001 C CNN
+	1    10100 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E634685
+P 10100 4500
+F 0 "#PWR?" H 10100 4500 30  0001 C CNN
+F 1 "GND" H 10100 4430 30  0001 C CNN
+F 2 "" H 10100 4500 60  0000 C CNN
+F 3 "" H 10100 4500 60  0000 C CNN
+	1    10100 4500
+	-1   0    0    -1  
+$EndComp
+Text Label 10800 3900 2    50   ~ 0
+MISO
+Text Label 10800 4000 2    50   ~ 0
+MOSI
+Text Label 10800 4100 2    50   ~ 0
+SCK
+Text Label 10800 4200 2    50   ~ 0
+RST
+Text Label 7050 2150 0    50   ~ 0
+MISO
+Text Label 7050 2050 0    50   ~ 0
+MOSI
+Text Label 7050 2250 0    50   ~ 0
+SCK
+Text Label 10450 1200 2    50   ~ 0
+RST
+Wire Wire Line
+	10600 3900 10800 3900
+Wire Wire Line
+	10600 4000 10800 4000
+Wire Wire Line
+	10600 4100 10800 4100
+Wire Wire Line
+	10600 4200 10800 4200
+Wire Wire Line
+	6475 2850 7050 2850
+Wire Wire Line
+	6475 2750 7050 2750
+Wire Wire Line
+	6475 2650 7050 2650
+Wire Wire Line
+	10150 1200 10450 1200
+Connection ~ 10150 1200
+Wire Wire Line
+	13375 3650 13375 3625
+Wire Wire Line
+	13900 975  14000 975 
+$Comp
+L Device:D D?
+U 1 1 5E66CBB0
+P 14000 1125
+F 0 "D?" V 13954 1204 50  0000 L CNN
+F 1 "D" V 14045 1204 50  0000 L CNN
+F 2 "" H 14000 1125 50  0001 C CNN
+F 3 "~" H 14000 1125 50  0001 C CNN
+	1    14000 1125
+	0    1    1    0   
+$EndComp
+Connection ~ 14000 975 
+Connection ~ 14000 1275
+Wire Wire Line
+	14000 1275 13700 1275
+$Comp
+L Relay:DIPxx-1Axx-12xD K?
+U 1 1 5E67407D
+P 13350 7725
+F 0 "K?" H 12895 7679 50  0000 R CNN
+F 1 "DIPxx-1Axx-12xD" H 12895 7770 50  0000 R CNN
+F 2 "Relay_THT:Relay_StandexMeder_DIP_LowProfile" H 13700 7675 50  0001 L CNN
+F 3 "https://standexelectronics.com/wp-content/uploads/datasheet_reed_relay_DIP.pdf" H 13350 7725 50  0001 C CNN
+	1    13350 7725
+	1    0    0    1   
+$EndComp
+$Comp
+L Transistor_BJT:BC546 Q?
+U 1 1 5E67D949
+P 13050 8225
+F 0 "Q?" H 13241 8271 50  0000 L CNN
+F 1 "BC546" H 13241 8180 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 13250 8150 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 13050 8225 50  0001 L CNN
+	1    13050 8225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E67DA1B
+P 12600 8225
+F 0 "R?" V 12550 8375 50  0000 C CNN
+F 1 "R" V 12600 8175 50  0000 C CNN
+F 2 "" V 12530 8225 50  0001 C CNN
+F 3 "~" H 12600 8225 50  0001 C CNN
+	1    12600 8225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12850 8225 12750 8225
+Wire Wire Line
+	12450 8225 12250 8225
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5E68CCAE
+P 14450 1075
+F 0 "J?" H 14425 1175 50  0000 L CNN
+F 1 "Türe DC out" H 13975 675 50  0000 L CNN
+F 2 "" H 14450 1075 50  0001 C CNN
+F 3 "~" H 14450 1075 50  0001 C CNN
+	1    14450 1075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5E68D715
+P 14375 2675
+F 0 "J?" H 14350 2775 50  0000 L CNN
+F 1 "Türe DC out" H 14000 2400 50  0000 L CNN
+F 2 "" H 14375 2675 50  0001 C CNN
+F 3 "~" H 14375 2675 50  0001 C CNN
+	1    14375 2675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5E68E3BB
+P 14150 7675
+F 0 "J?" H 14125 7775 50  0000 L CNN
+F 1 "Klingel out" H 13700 7175 50  0000 L CNN
+F 2 "" H 14150 7675 50  0001 C CNN
+F 3 "~" H 14150 7675 50  0001 C CNN
+	1    14150 7675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14250 1075 14250 975 
+Wire Wire Line
+	14000 975  14250 975 
+Wire Wire Line
+	14250 1175 14250 1275
+Wire Wire Line
+	14000 1275 14250 1275
+Wire Wire Line
+	13550 7425 13950 7425
+Wire Wire Line
+	13950 7425 13950 7675
+Wire Wire Line
+	13950 7775 13950 8025
+Wire Wire Line
+	13950 8025 13550 8025
+Wire Wire Line
+	14075 6150 13200 6150
+Wire Wire Line
+	14075 6450 13450 6450
+Text Notes 13375 6150 0    50   ~ 0
+Drücker betätigt
+Text Notes 13375 6250 0    50   ~ 0
+Riegel EINgefahren 
+Text Notes 13375 6350 0    50   ~ 0
+Riegel AUSgefahren 
+$Comp
+L Device:R_Small R?
+U 1 1 5E6D994A
+P 12900 5975
+F 0 "R?" H 12800 5850 50  0000 L CNN
+F 1 "4K7" V 12900 5900 46  0000 L CNN
+F 2 "" H 12900 5975 50  0001 C CNN
+F 3 "~" H 12900 5975 50  0001 C CNN
+	1    12900 5975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E6D9A16
+P 12775 5975
+F 0 "R?" H 12675 5850 50  0000 L CNN
+F 1 "4K7" V 12775 5900 50  0000 L CNN
+F 2 "" H 12775 5975 50  0001 C CNN
+F 3 "~" H 12775 5975 50  0001 C CNN
+	1    12775 5975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E6D9AA7
+P 12650 5975
+F 0 "R?" H 12550 5850 50  0000 L CNN
+F 1 "4K7" V 12650 5900 50  0000 L CNN
+F 2 "" H 12650 5975 50  0001 C CNN
+F 3 "~" H 12650 5975 50  0001 C CNN
+	1    12650 5975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12900 6075 12900 6150
+Connection ~ 12900 6150
+Wire Wire Line
+	12775 6075 12775 6250
+Wire Wire Line
+	12650 6075 12650 6350
+Connection ~ 12775 6250
+Wire Wire Line
+	12775 6250 12425 6250
+Connection ~ 12650 6350
+Wire Wire Line
+	12650 6350 12425 6350
+Wire Wire Line
+	12775 6250 13000 6250
+Wire Wire Line
+	12425 6150 12900 6150
+Wire Wire Line
+	12650 5875 12650 5825
+Wire Wire Line
+	12900 5875 12900 5825
+Wire Wire Line
+	12900 5825 12775 5825
+Connection ~ 12650 5825
+Wire Wire Line
+	12650 5825 12650 5750
+Wire Wire Line
+	12775 5875 12775 5825
+Connection ~ 12775 5825
+Wire Wire Line
+	12775 5825 12650 5825
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E6FD55F
+P 13450 6800
+F 0 "#PWR?" H 13450 6800 30  0001 C CNN
+F 1 "GND" H 13450 6730 30  0001 C CNN
+F 2 "" H 13450 6800 60  0000 C CNN
+F 3 "" H 13450 6800 60  0000 C CNN
+	1    13450 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5E700FD1
+P 12650 5750
+F 0 "#PWR?" H 12650 5600 50  0001 C CNN
+F 1 "+3.3VA" H 12800 5750 50  0000 C CNN
+F 2 "" H 12650 5750 50  0001 C CNN
+F 3 "" H 12650 5750 50  0001 C CNN
+	1    12650 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E702ADC
+P 12325 6150
+F 0 "R?" V 12300 6225 50  0000 L CNN
+F 1 "1K" V 12325 6100 50  0000 L CNN
+F 2 "" H 12325 6150 50  0001 C CNN
+F 3 "~" H 12325 6150 50  0001 C CNN
+	1    12325 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E702BC6
+P 12325 6250
+F 0 "R?" V 12300 6325 50  0000 L CNN
+F 1 "1K" V 12325 6200 50  0000 L CNN
+F 2 "" H 12325 6250 50  0001 C CNN
+F 3 "~" H 12325 6250 50  0001 C CNN
+	1    12325 6250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E702CDA
+P 12325 6350
+F 0 "R?" V 12300 6425 50  0000 L CNN
+F 1 "1K" V 12325 6300 50  0000 L CNN
+F 2 "" H 12325 6350 50  0001 C CNN
+F 3 "~" H 12325 6350 50  0001 C CNN
+	1    12325 6350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12225 6150 12025 6150
+Wire Wire Line
+	12225 6250 12025 6250
+Wire Wire Line
+	12225 6350 12025 6350
+Text Label 7050 1950 0    50   ~ 0
+PB2
+Wire Wire Line
+	6475 1950 7050 1950
+Text Label 7050 2850 0    50   ~ 0
+PC2
+Wire Wire Line
+	6475 2050 7050 2050
+Wire Wire Line
+	6475 2150 7050 2150
+Text Label 7050 2650 0    50   ~ 0
+PC0
+Text Label 12025 6250 0    50   ~ 0
+PC3
+Text Label 12025 6350 0    50   ~ 0
+PC4
+Text Label 12025 6150 0    50   ~ 0
+PC2
+Wire Wire Line
+	6475 3450 7050 3450
+Wire Wire Line
+	6475 3550 7050 3550
+Wire Wire Line
+	6475 3650 7050 3650
+Wire Wire Line
+	6475 3750 7050 3750
+Text Label 7050 3450 0    50   ~ 0
+PD0
+Text Label 7050 3550 0    50   ~ 0
+PD1
+Text Label 7050 3650 0    50   ~ 0
+PD2
+Text Label 12425 1875 0    50   ~ 0
+PD0
+Text Label 12500 3425 0    50   ~ 0
+PD1
+Text Label 12250 8225 0    50   ~ 0
+PD3
+Wire Wire Line
+	12425 1875 12775 1875
+Wire Wire Line
+	1650 2975 2525 2975
+Text Label 2525 2975 0    50   ~ 0
+RxD1_DE
+Text Notes 12075 1350 0    50   ~ 0
+12 Volt DC Out\nfür Schloß mit Drücker\nSteuerung
+Text Notes 12200 7625 0    50   ~ 0
+Klingel Out wenn \nTaster betätigt
+Text Notes 12000 5600 0    50   ~ 0
+Rückmeldung Drücker\nSchloß
+$Comp
+L Olimex_Adapter-rescue:AVR-ISP-6-Connector J?
+U 1 1 5E79D6D8
+P 10200 4100
+F 0 "J?" H 9920 4196 50  0000 R CNN
+F 1 "AVR-ISP-6" H 9920 4105 50  0000 R CNN
+F 2 "" V 9950 4150 50  0001 C CNN
+F 3 " ~" H 8925 3550 50  0001 C CNN
+	1    10200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6475 3850 7050 3850
+Wire Wire Line
+	6475 3950 7050 3950
+Wire Wire Line
+	6475 4050 7050 4050
+Text Label 2450 2075 0    50   ~ 0
+*GPIO_5
+Text Notes 2950 2075 0    50   ~ 0
+*GPIO5 - Ethernet EIN/AUS 
+Text Label 2450 1975 0    50   ~ 0
+*ESP_EN
+Text Label 2525 3175 0    50   ~ 0
+*BUT1 
+Text Label 2525 3275 0    50   ~ 0
+GPI35
+Text Label 2525 3375 0    50   ~ 0
+GPI36
+Text Label 2525 3475 0    50   ~ 0
+*GPI39
+Text GLabel 1650 2175 2    50   Input ~ 0
+NC
+Text GLabel 1650 2275 2    50   Input ~ 0
+NC
+Text GLabel 1650 2375 2    50   Input ~ 0
+NC
+Text GLabel 1650 2475 2    50   Input ~ 0
+NC
+Text GLabel 1650 2575 2    50   Input ~ 0
+NC
+Text GLabel 1650 2675 2    50   Input ~ 0
+NC
+Text Label 7050 3750 0    50   ~ 0
+PD3
+Text Label 7050 3850 0    50   ~ 0
+PD4
+Text Label 7050 3950 0    50   ~ 0
+PD5
+Text Label 7050 4050 0    50   ~ 0
+PD6
+Text Label 6575 1325 2    50   ~ 0
+PD5
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5E7DD6E9
+P 6800 1325
+F 0 "JP?" H 6800 1537 50  0000 C CNN
+F 1 "GPIO" H 6800 1446 50  0000 C CNN
+F 2 "" H 6800 1325 50  0001 C CNN
+F 3 "~" H 6800 1325 50  0001 C CNN
+	1    6800 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6575 1325 6700 1325
+Wire Wire Line
+	6900 1325 6950 1325
+Text Notes 2975 2975 0    50   ~ 0
+Datenfreigabe ATMEGA328
+Text Label 7050 1850 0    50   ~ 0
+RxAT328
+Wire Wire Line
+	1650 2775 2525 2775
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5E81FE72
+P 7750 6050
+F 0 "J?" V 7900 6025 50  0000 R CNN
+F 1 "Switch PSU" V 7800 6200 50  0000 R CNN
+F 2 "" H 7750 6050 50  0001 C CNN
+F 3 "~" H 7750 6050 50  0001 C CNN
+	1    7750 6050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7650 6250 7650 6500
+Wire Wire Line
+	7850 6250 7850 6500
+Text Label 7650 6425 1    50   ~ 0
+EN
+Text Label 7750 6425 1    50   ~ 0
+IN+
+Text Label 7850 6425 1    50   ~ 0
+GND
+Text Label 7950 6425 1    50   ~ 0
+OUT+
+Wire Wire Line
+	7650 6500 7850 6500
+Connection ~ 7850 6500
+Wire Wire Line
+	7750 6250 7750 6650
+Wire Wire Line
+	7850 6500 7850 6775
+Wire Wire Line
+	7950 6500 8200 6500
+Wire Wire Line
+	7950 6250 7950 6500
+Wire Notes Line
+	8050 6100 8050 5550
+Wire Notes Line
+	8050 5550 7550 5550
+Wire Notes Line
+	7550 5550 7550 6100
+Wire Notes Line
+	7550 6100 8050 6100
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5E86E7B4
+P 8675 6050
+F 0 "J?" V 8825 6025 50  0000 R CNN
+F 1 "Switch PSU" V 8725 6200 50  0000 R CNN
+F 2 "" H 8675 6050 50  0001 C CNN
+F 3 "~" H 8675 6050 50  0001 C CNN
+	1    8675 6050
+	0    -1   -1   0   
+$EndComp
+Text Label 8575 6425 1    50   ~ 0
+EN
+Text Label 8675 6425 1    50   ~ 0
+IN+
+Text Label 8775 6425 1    50   ~ 0
+GND
+Text Label 8875 6425 1    50   ~ 0
+OUT+
+Wire Wire Line
+	8675 6250 8675 6650
+Wire Wire Line
+	8875 6250 8875 6525
+Wire Notes Line
+	8975 6100 8975 5550
+Wire Notes Line
+	8975 5550 8475 5550
+Wire Notes Line
+	8475 5550 8475 6100
+Wire Notes Line
+	8475 6100 8975 6100
+Wire Wire Line
+	8200 6500 8200 6325
+Wire Wire Line
+	7750 6650 8675 6650
+Connection ~ 7750 6650
+Wire Wire Line
+	8775 6250 8775 6750
+Text Notes 7600 5700 0    50   ~ 0
+5 Volt DC 
+Text Notes 8525 5700 0    50   ~ 0
+12 Volt DC 
+Wire Wire Line
+	8875 6525 9100 6525
+Wire Wire Line
+	9100 6525 9100 6325
+$Comp
+L power:+5VA #PWR?
+U 1 1 5E89D393
+P 8200 6325
+F 0 "#PWR?" H 8200 6175 50  0001 C CNN
+F 1 "+5VA" H 8200 6475 50  0000 C CNN
+F 2 "" H 8200 6325 50  0001 C CNN
+F 3 "" H 8200 6325 50  0001 C CNN
+	1    8200 6325
+	1    0    0    -1  
+$EndComp
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E89E35A
+P 7850 6775
+F 0 "#PWR?" H 7850 6775 30  0001 C CNN
+F 1 "GND" H 7850 6705 30  0001 C CNN
+F 2 "" H 7850 6775 60  0000 C CNN
+F 3 "" H 7850 6775 60  0000 C CNN
+	1    7850 6775
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E89E3D7
+P 8775 6750
+F 0 "#PWR?" H 8775 6750 30  0001 C CNN
+F 1 "GND" H 8775 6680 30  0001 C CNN
+F 2 "" H 8775 6750 60  0000 C CNN
+F 3 "" H 8775 6750 60  0000 C CNN
+	1    8775 6750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E8B23C6
+P 8575 7350
+F 0 "#PWR?" H 8575 7350 30  0001 C CNN
+F 1 "GND" H 8575 7280 30  0001 C CNN
+F 2 "" H 8575 7350 60  0000 C CNN
+F 3 "" H 8575 7350 60  0000 C CNN
+	1    8575 7350
+	-1   0    0    -1  
+$EndComp
+Text Label 9475 7225 0    50   ~ 0
+PD6
+$Comp
+L Device:R_Small R?
+U 1 1 5E8ECD5C
+P -2225 9550
+F 0 "R?" H -2325 9525 50  0000 C CNN
+F 1 "R" H -2300 9600 50  0000 C CNN
+F 2 "" H -2225 9550 50  0001 C CNN
+F 3 "~" H -2225 9550 50  0001 C CNN
+	1    -2225 9550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5E8ECE6B
+P -2225 9850
+F 0 "R?" H -2325 9825 50  0000 C CNN
+F 1 "R" H -2300 9900 50  0000 C CNN
+F 2 "" H -2225 9850 50  0001 C CNN
+F 3 "~" H -2225 9850 50  0001 C CNN
+	1    -2225 9850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E900B3B
+P -2225 10100
+F 0 "#PWR?" H -2225 10100 30  0001 C CNN
+F 1 "GND" H -2225 10030 30  0001 C CNN
+F 2 "" H -2225 10100 60  0000 C CNN
+F 3 "" H -2225 10100 60  0000 C CNN
+	1    -2225 10100
+	-1   0    0    -1  
+$EndComp
+Text Notes 2950 3475 0    50   ~ 0
+*GPI39 - DC 12 Volt extern Überwachung
+Text Notes 15500 11050 0    50   ~ 0
+1.0
+Text Notes 12975 11075 0    50   ~ 0
+08.03.2020
+$Comp
+L Olimex_Adapter-rescue:ATmega328-AU-MCU_Microchip_ATmega U?
+U 1 1 5E603306
+P 5875 2950
+F 0 "U?" H 6050 1450 50  0000 C CNN
+F 1 "ATmega328-AU" H 5500 1450 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 5875 2950 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 5875 2950 50  0001 C CNN
+	1    5875 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6475 2250 7050 2250
+Wire Wire Line
+	6475 2350 7050 2350
+Wire Wire Line
+	6475 2450 7050 2450
+Text Label 7050 2750 0    50   ~ 0
+PC1
+Text Label 7050 2350 0    50   ~ 0
+PB6
+Text Label 9975 1775 2    50   ~ 0
+PB7
+Text Label 9975 1575 2    50   ~ 0
+PB6
+Text Label 7050 2450 0    50   ~ 0
+PB7
+Wire Wire Line
+	6475 3250 7050 3250
+Text Label 7050 3250 0    50   ~ 0
+PC6
+Text Label 9975 1375 2    50   ~ 0
+PC6
+Text Label 7050 4150 0    50   ~ 0
+PD7
+Wire Wire Line
+	6475 4150 7050 4150
+Wire Wire Line
+	6475 2950 7050 2950
+Wire Wire Line
+	6475 3050 7050 3050
+Wire Wire Line
+	6475 3150 7050 3150
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5E6AD556
+P 5875 1325
+F 0 "#PWR?" H 5875 1175 50  0001 C CNN
+F 1 "+3.3VA" H 5775 1475 50  0000 C CNN
+F 2 "" H 5875 1325 50  0001 C CNN
+F 3 "" H 5875 1325 50  0001 C CNN
+	1    5875 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9675 1200 9550 1200
+Wire Wire Line
+	5875 1450 5875 1375
+Wire Wire Line
+	5875 1375 5975 1375
+Wire Wire Line
+	5975 1375 5975 1450
+Connection ~ 5875 1375
+Wire Wire Line
+	5875 1375 5875 1325
+Wire Wire Line
+	5275 1750 5025 1750
+Wire Wire Line
+	5025 1750 5025 1850
+$Comp
+L Device:C_Small C?
+U 1 1 5E6D3C80
+P 5025 1950
+F 0 "C?" H 4925 2025 50  0000 L CNN
+F 1 "C_Small" H 4700 1875 50  0000 L CNN
+F 2 "" H 5025 1950 50  0001 C CNN
+F 3 "~" H 5025 1950 50  0001 C CNN
+	1    5025 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 2050 5025 2225
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E6DC92C
+P 5025 2225
+F 0 "#PWR?" H 5025 2225 30  0001 C CNN
+F 1 "GND" H 5025 2155 30  0001 C CNN
+F 2 "" H 5025 2225 60  0000 C CNN
+F 3 "" H 5025 2225 60  0000 C CNN
+	1    5025 2225
+	1    0    0    -1  
+$EndComp
+Text Label 7050 2950 0    50   ~ 0
+PC3
+Text Label 7050 3050 0    50   ~ 0
+PC4
+Text Label 7050 3150 0    50   ~ 0
+PC5
+$Comp
+L Device:D_x2_ACom_AKK D?
+U 1 1 5E6114FA
+P 10250 2800
+F 0 "D?" H 10250 2924 50  0000 C CNN
+F 1 "1N4148" H 10250 3015 50  0000 C CNN
+F 2 "" H 10250 2800 50  0001 C CNN
+F 3 "~" H 10250 2800 50  0001 C CNN
+	1    10250 2800
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E634B95
+P 10250 2350
+F 0 "R?" V 10125 2350 50  0000 C CNN
+F 1 "10K" V 10250 2350 50  0000 C CNN
+F 2 "" V 10180 2350 50  0001 C CNN
+F 3 "~" H 10250 2350 50  0001 C CNN
+	1    10250 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5E63D9D0
+P 10250 2200
+F 0 "#PWR?" H 10250 2050 50  0001 C CNN
+F 1 "+3.3VA" H 10250 2350 50  0000 C CNN
+F 2 "" H 10250 2200 50  0001 C CNN
+F 3 "" H 10250 2200 50  0001 C CNN
+	1    10250 2200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10250 2500 10250 2575
+Wire Wire Line
+	10250 2575 9950 2575
+Connection ~ 10250 2575
+Wire Wire Line
+	10250 2575 10250 2600
+Text Label 9950 2575 0    50   ~ 0
+RxD1
+Text Label 9900 2800 2    50   ~ 0
+RxRS485
+Wire Wire Line
+	9950 2800 9900 2800
+Wire Wire Line
+	6475 1850 7050 1850
+Text Label 10625 2800 0    50   ~ 0
+RxAT328
+Wire Wire Line
+	10550 2800 10625 2800
+Text Notes 9925 3225 0    50   ~ 0
+logisches ODER für \nDatenEmpfang 
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E6D8FC2
+P 13150 8500
+F 0 "#PWR?" H 13150 8500 30  0001 C CNN
+F 1 "GND" H 13150 8430 30  0001 C CNN
+F 2 "" H 13150 8500 60  0000 C CNN
+F 3 "" H 13150 8500 60  0000 C CNN
+	1    13150 8500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 5E6E355C
+P 13375 2650
+F 0 "Q?" V 13550 2800 50  0000 C CNN
+F 1 "IRF7404" V 13550 2375 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 13575 2575 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 13375 2650 50  0001 L CNN
+	1    13375 2650
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E6E3664
+P 13375 3075
+F 0 "R?" H 13425 2950 50  0000 L CNN
+F 1 "R" V 13375 3000 50  0000 L CNN
+F 2 "" V 13305 3075 50  0001 C CNN
+F 3 "~" H 13375 3075 50  0001 C CNN
+	1    13375 3075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E6EB640
+P 13025 2700
+F 0 "R?" H 13075 2575 50  0000 L CNN
+F 1 "R" V 13025 2625 50  0000 L CNN
+F 2 "" V 12955 2700 50  0001 C CNN
+F 3 "~" H 13025 2700 50  0001 C CNN
+	1    13025 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13175 2550 13025 2550
+Connection ~ 13025 2550
+Wire Wire Line
+	13025 2850 13025 2875
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E719D93
+P 13375 3650
+F 0 "#PWR?" H 13375 3650 30  0001 C CNN
+F 1 "GND" H 13375 3580 30  0001 C CNN
+F 2 "" H 13375 3650 60  0000 C CNN
+F 3 "" H 13375 3650 60  0000 C CNN
+	1    13375 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12625 2550 13025 2550
+Wire Wire Line
+	14175 2550 14175 2675
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E633D0A
+P 13675 3200
+F 0 "#PWR?" H 13675 3200 30  0001 C CNN
+F 1 "GND" H 13675 3130 30  0001 C CNN
+F 2 "" H 13675 3200 60  0000 C CNN
+F 3 "" H 13675 3200 60  0000 C CNN
+	1    13675 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13950 2550 14175 2550
+$Comp
+L Device:D D?
+U 1 1 5E633D99
+P 13950 2700
+F 0 "D?" V 13904 2779 50  0000 L CNN
+F 1 "D" V 13995 2779 50  0000 L CNN
+F 2 "" H 13950 2700 50  0001 C CNN
+F 3 "~" H 13950 2700 50  0001 C CNN
+	1    13950 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14175 2775 14175 2850
+Wire Wire Line
+	14175 2850 13950 2850
+Wire Wire Line
+	13675 2850 13675 3200
+Connection ~ 13950 2850
+Wire Wire Line
+	13950 2850 13675 2850
+$Comp
+L Device:R R?
+U 1 1 5E671386
+P 13725 2550
+F 0 "R?" V 13650 2700 50  0000 C CNN
+F 1 "R" V 13725 2500 50  0000 C CNN
+F 2 "" V 13655 2550 50  0001 C CNN
+F 3 "~" H 13725 2550 50  0001 C CNN
+	1    13725 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13875 2550 13950 2550
+Connection ~ 13950 2550
+Wire Wire Line
+	13200 975  13075 975 
+Wire Wire Line
+	13075 1000 13075 975 
+Connection ~ 13075 975 
+Wire Wire Line
+	13075 975  12775 975 
+Wire Wire Line
+	13375 2875 13375 2925
+Wire Wire Line
+	13375 2850 13375 2875
+Connection ~ 13375 2875
+Wire Wire Line
+	13025 2875 13375 2875
+$Comp
+L Transistor_FET:IRF7404 Q?
+U 1 1 5E7497C2
+P 13400 4075
+F 0 "Q?" V 13575 4225 50  0000 C CNN
+F 1 "IRF7404" V 13575 3800 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 13600 4000 50  0001 L CIN
+F 3 "http://www.infineon.com/dgdl/irf7404.pdf?fileId=5546d462533600a4015355fa2b5b1b9e" V 13400 4075 50  0001 L CNN
+	1    13400 4075
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E74989F
+P 13750 3975
+F 0 "R?" V 13675 4125 50  0000 C CNN
+F 1 "R" V 13750 3925 50  0000 C CNN
+F 2 "" V 13680 3975 50  0001 C CNN
+F 3 "~" H 13750 3975 50  0001 C CNN
+	1    13750 3975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13200 3975 13050 3975
+$Comp
+L Device:R R?
+U 1 1 5E75364D
+P 13400 4600
+F 0 "R?" H 13450 4475 50  0000 L CNN
+F 1 "R" V 13400 4525 50  0000 L CNN
+F 2 "" V 13330 4600 50  0001 C CNN
+F 3 "~" H 13400 4600 50  0001 C CNN
+	1    13400 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 4275 13400 4375
+$Comp
+L Device:R R?
+U 1 1 5E768594
+P 13050 4175
+F 0 "R?" H 13100 4050 50  0000 L CNN
+F 1 "R" V 13050 4100 50  0000 L CNN
+F 2 "" V 12980 4175 50  0001 C CNN
+F 3 "~" H 13050 4175 50  0001 C CNN
+	1    13050 4175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13050 4025 13050 3975
+Connection ~ 13050 3975
+Wire Wire Line
+	13050 3975 12675 3975
+Wire Wire Line
+	13050 4325 13050 4375
+Wire Wire Line
+	13050 4375 13400 4375
+Connection ~ 13400 4375
+Wire Wire Line
+	13400 4375 13400 4450
+$Comp
+L Transistor_BJT:BC546 Q?
+U 1 1 5E798920
+P 13300 4950
+F 0 "Q?" H 13491 4996 50  0000 L CNN
+F 1 "BC546" H 13491 4905 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 13500 4875 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 13300 4950 50  0001 L CNN
+	1    13300 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E7A3530
+P 12825 4950
+F 0 "R?" V 12775 5100 50  0000 C CNN
+F 1 "R" V 12825 4900 50  0000 C CNN
+F 2 "" V 12755 4950 50  0001 C CNN
+F 3 "~" H 12825 4950 50  0001 C CNN
+	1    12825 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	12975 4950 13100 4950
+Text Label 12275 4950 0    50   ~ 0
+PD2
+Wire Wire Line
+	12675 4950 12275 4950
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5E7BB85E
+P 14400 4075
+F 0 "J?" H 14375 4175 50  0000 L CNN
+F 1 "Türe DC out" H 14050 3775 50  0000 L CNN
+F 2 "" H 14400 4075 50  0001 C CNN
+F 3 "~" H 14400 4075 50  0001 C CNN
+	1    14400 4075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13900 3975 13950 3975
+Wire Wire Line
+	14200 3975 14200 4075
+Wire Wire Line
+	14200 4175 14200 4275
+Wire Wire Line
+	14200 4275 13950 4275
+Wire Wire Line
+	13675 4275 13675 4525
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E7CED47
+P 13675 4525
+F 0 "#PWR?" H 13675 4525 30  0001 C CNN
+F 1 "GND" H 13675 4455 30  0001 C CNN
+F 2 "" H 13675 4525 60  0000 C CNN
+F 3 "" H 13675 4525 60  0000 C CNN
+	1    13675 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5E7CEDF1
+P 13950 4125
+F 0 "D?" V 13904 4204 50  0000 L CNN
+F 1 "D" V 13995 4204 50  0000 L CNN
+F 2 "" H 13950 4125 50  0001 C CNN
+F 3 "~" H 13950 4125 50  0001 C CNN
+	1    13950 4125
+	0    1    1    0   
+$EndComp
+Connection ~ 13950 3975
+Wire Wire Line
+	13950 3975 14200 3975
+Connection ~ 13950 4275
+Wire Wire Line
+	13950 4275 13675 4275
+$Comp
+L Reference_Voltage:LM385M-ADJ U?
+U 1 1 5E7E1969
+P -1950 9700
+F 0 "U?" V -1904 9613 50  0000 R CNN
+F 1 "LM385M-ADJ" V -1995 9613 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H -1950 9500 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm185-adj.pdf" H -1950 9700 50  0001 C CIN
+	1    -1950 9700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6125 9700 6700 9700
+Wire Wire Line
+	6125 9600 6700 9600
+Text Label 6700 9600 0    50   ~ 0
+RxD1_DE
+Text Label 6950 1325 0    50   ~ 0
+RxD1_DE
+$Comp
+L Connector:Screw_Terminal_01x06 J?
+U 1 1 5E655DF4
+P 14275 6150
+F 0 "J?" H 14250 6450 50  0000 L CNN
+F 1 "Drückerschloß" V 14425 5825 50  0000 L CNN
+F 2 "" H 14275 6150 50  0001 C CNN
+F 3 "~" H 14275 6150 50  0001 C CNN
+	1    14275 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14075 5950 13975 5950
+Wire Wire Line
+	13975 5950 13975 5600
+Wire Wire Line
+	14075 6050 13850 6050
+Wire Wire Line
+	13850 6050 13850 5600
+Wire Wire Line
+	14250 1275 14250 1400
+Connection ~ 14250 1275
+Wire Wire Line
+	14250 975  14250 875 
+Connection ~ 14250 975 
+Text Label 14250 875  0    50   ~ 0
+DS+
+Text Label 14250 1400 0    50   ~ 0
+DS-
+Text Label 13975 5600 1    50   ~ 0
+DS+
+Text Label 13850 5600 1    50   ~ 0
+DS-
+Wire Wire Line
+	13150 8425 13150 8500
+Wire Notes Line
+	14575 5375 14575 6975
+Wire Notes Line
+	14575 6975 11950 6975
+Wire Notes Line
+	11950 6975 11950 5375
+Text Notes 12125 3025 0    50   ~ 0
+12 Volt DC Out\nfür Schloß Universal
+Text Notes 12025 4400 0    50   ~ 0
+12 Volt DC Out\nOptional
+Wire Wire Line
+	-1950 9850 -1950 10000
+Wire Wire Line
+	-2225 9950 -2225 10000
+Wire Wire Line
+	-2225 9750 -2225 9700
+Wire Wire Line
+	-2150 9700 -2225 9700
+Connection ~ -2225 9700
+Wire Wire Line
+	-2225 9700 -2225 9650
+Wire Wire Line
+	-1950 10000 -2225 10000
+Connection ~ -2225 10000
+Wire Wire Line
+	-2225 10000 -2225 10100
+Wire Wire Line
+	-2225 9450 -2225 9200
+$Comp
+L Device:R_Small R?
+U 1 1 5E824F4B
+P -1950 9350
+F 0 "R?" H -2050 9325 50  0000 C CNN
+F 1 "R" H -2025 9400 50  0000 C CNN
+F 2 "" H -1950 9350 50  0001 C CNN
+F 3 "~" H -1950 9350 50  0001 C CNN
+	1    -1950 9350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	-1950 9250 -1950 9200
+Wire Wire Line
+	-1950 9550 -1950 9500
+Wire Wire Line
+	-1950 9500 -1800 9500
+Connection ~ -1950 9500
+Wire Wire Line
+	-1950 9500 -1950 9450
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5E855B8C
+P -1950 9200
+F 0 "#PWR?" H -1950 9050 50  0001 C CNN
+F 1 "+3.3VA" H -1975 9350 50  0000 C CNN
+F 2 "" H -1950 9200 50  0001 C CNN
+F 3 "" H -1950 9200 50  0001 C CNN
+	1    -1950 9200
+	-1   0    0    -1  
+$EndComp
+Text Notes -1850 9950 0    50   ~ 0
+Spannungs-\nüberwachung
+$Comp
+L Device:Fuse_Small F?
+U 1 1 5E90D99F
+P 4400 9025
+F 0 "F?" V 4354 9073 50  0000 L CNN
+F 1 "Fuse_Small" H 4050 8875 50  0000 L CNN
+F 2 "" H 4400 9025 50  0001 C CNN
+F 3 "~" H 4400 9025 50  0001 C CNN
+	1    4400 9025
+	0    1    1    0   
+$EndComp
+Wire Notes Line
+	11950 5375 14575 5375
+Wire Notes Line
+	11950 5275 14575 5275
+Wire Notes Line
+	14575 5275 14575 3825
+Wire Notes Line
+	11950 5275 11950 3825
+Wire Notes Line
+	11950 3825 14575 3825
+Wire Notes Line
+	14575 3750 11950 3750
+Wire Notes Line
+	14575 3750 14575 2350
+Wire Notes Line
+	14575 2350 11950 2350
+Wire Notes Line
+	11950 2350 11950 3750
+Wire Notes Line
+	14575 2250 11950 2250
+Wire Notes Line
+	14575 750  11950 750 
+Wire Notes Line
+	11950 750  11950 2250
+Wire Notes Line
+	14575 750  14575 2250
+Wire Notes Line
+	14575 7150 14575 8575
+Wire Notes Line
+	14575 8575 11975 8575
+Wire Notes Line
+	11975 8575 11975 7150
+Wire Notes Line
+	11975 7150 14575 7150
+$Comp
+L Regulator_Linear:L200 U?
+U 1 1 5E6323E1
+P 2400 6750
+F 0 "U?" H 2400 7092 50  0000 C CNN
+F 1 "L200" H 2400 7001 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-5_P3.4x3.8mm_StaggerOdd_Lead7.13mm_TabDown" H 2400 7075 50  0001 C CNN
+F 3 "http://www.zen22142.zen.co.uk/Circuits/Power/l200.pdf" H 2400 6950 50  0001 C CNN
+	1    2400 6750
+	1    0    0    -1  
+$EndComp
+Text Notes 12250 10925 0    50   ~ 0
+Türsteuerung Master mit Olimex Modul ESP32
+$Comp
+L Device:R R?
+U 1 1 5E6DA806
+P 3050 6750
+F 0 "R?" V 3100 6900 50  0000 C CNN
+F 1 "0R22" V 3050 6750 50  0000 C CNN
+F 2 "" V 2980 6750 50  0001 C CNN
+F 3 "~" H 3050 6750 50  0001 C CNN
+	1    3050 6750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2800 6650 3300 6650
+Wire Wire Line
+	2800 6750 2900 6750
+Wire Wire Line
+	3200 6750 3300 6750
+Wire Wire Line
+	3300 6750 3300 6650
+Connection ~ 3300 6650
+Wire Wire Line
+	3300 6650 3500 6650
+$Comp
+L Device:R R?
+U 1 1 5E71635A
+P 3500 6850
+F 0 "R?" V 3550 7000 50  0000 C CNN
+F 1 "R" V 3500 6850 50  0000 C CNN
+F 2 "" V 3430 6850 50  0001 C CNN
+F 3 "~" H 3500 6850 50  0001 C CNN
+	1    3500 6850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E7164C8
+P 3500 7500
+F 0 "R?" V 3550 7650 50  0000 C CNN
+F 1 "0R22" V 3500 7500 50  0000 C CNN
+F 2 "" V 3430 7500 50  0001 C CNN
+F 3 "~" H 3500 7500 50  0001 C CNN
+	1    3500 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 7050 2400 7200
+Wire Wire Line
+	2000 6650 1850 6650
+Wire Wire Line
+	2800 6850 2975 6850
+$Comp
+L Device:R R?
+U 1 1 5E761CFD
+P 2975 7050
+F 0 "R?" V 3025 7200 50  0000 C CNN
+F 1 "0R22" V 2975 7050 50  0000 C CNN
+F 2 "" V 2905 7050 50  0001 C CNN
+F 3 "~" H 2975 7050 50  0001 C CNN
+	1    2975 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 6700 3500 6650
+Connection ~ 3500 6650
+Wire Wire Line
+	3500 6650 4175 6650
+Wire Wire Line
+	3500 7300 3500 7325
+$Comp
+L Simulation_SPICE:DIODE D?
+U 1 1 5E796FAD
+P 4325 6650
+F 0 "D?" H 4325 6867 50  0000 C CNN
+F 1 "DIODE" H 4325 6776 50  0000 C CNN
+F 2 "" H 4325 6650 50  0001 C CNN
+F 3 "~" H 4325 6650 50  0001 C CNN
+F 4 "Y" H 4325 6650 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 4325 6650 50  0001 L CNN "Spice_Primitive"
+	1    4325 6650
+	1    0    0    -1  
+$EndComp
+Text GLabel 5775 7450 2    50   Input ~ 0
+Akku-
+$Comp
+L Simulation_SPICE:DIODE D?
+U 1 1 5E7C0C32
+P 6700 6650
+F 0 "D?" H 6825 6700 50  0000 C CNN
+F 1 "DIODE" H 6700 6525 50  0000 C CNN
+F 2 "" H 6700 6650 50  0001 C CNN
+F 3 "~" H 6700 6650 50  0001 C CNN
+F 4 "Y" H 6700 6650 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6700 6650 50  0001 L CNN "Spice_Primitive"
+	1    6700 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:RTRIM R?
+U 1 1 5E7EFBC8
+P 3500 7150
+F 0 "R?" H 3628 7196 50  0000 L CNN
+F 1 "RTRIM" H 3628 7105 50  0000 L CNN
+F 2 "" V 3430 7150 50  0001 C CNN
+F 3 "~" H 3500 7150 50  0001 C CNN
+	1    3500 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 7325 3300 7325
+Connection ~ 3500 7325
+Wire Wire Line
+	3500 7325 3500 7350
+Wire Wire Line
+	3300 6850 3300 7325
+Wire Wire Line
+	2975 6900 2975 6850
+Connection ~ 2975 6850
+Wire Wire Line
+	2975 6850 3300 6850
+$Comp
+L Simulation_SPICE:DIODE D?
+U 1 1 5E8477A2
+P 2975 7350
+F 0 "D?" V 3021 7270 50  0000 R CNN
+F 1 "DIODE" V 2930 7270 50  0000 R CNN
+F 2 "" H 2975 7350 50  0001 C CNN
+F 3 "~" H 2975 7350 50  0001 C CNN
+F 4 "Y" H 2975 7350 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 2975 7350 50  0001 L CNN "Spice_Primitive"
+	1    2975 7350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E8652BB
+P 2400 7450
+F 0 "#PWR?" H 2400 7450 30  0001 C CNN
+F 1 "GND" H 2400 7380 30  0001 C CNN
+F 2 "" H 2400 7450 60  0000 C CNN
+F 3 "" H 2400 7450 60  0000 C CNN
+	1    2400 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 7650 3500 7775
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E8827EA
+P 3500 7775
+F 0 "#PWR?" H 3500 7775 30  0001 C CNN
+F 1 "GND" H 3500 7705 30  0001 C CNN
+F 2 "" H 3500 7775 60  0000 C CNN
+F 3 "" H 3500 7775 60  0000 C CNN
+	1    3500 7775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D?
+U 1 1 5E89FADD
+P 5675 7175
+F 0 "D?" V 5629 7254 50  0000 L CNN
+F 1 "16V" V 5720 7254 50  0000 L CNN
+F 2 "" H 5675 7175 50  0001 C CNN
+F 3 "~" H 5675 7175 50  0001 C CNN
+	1    5675 7175
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BD139 Q?
+U 1 1 5E8CC5ED
+P 5175 7200
+F 0 "Q?" H 5367 7246 50  0000 L CNN
+F 1 "BD139" H 5367 7155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-126-3_Vertical" H 5375 7125 50  0001 L CIN
+F 3 "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00001225.pdf" H 5175 7200 50  0001 L CNN
+	1    5175 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E8CCA2A
+P 5275 6850
+F 0 "R?" V 5325 7000 50  0000 C CNN
+F 1 "47R" V 5275 6850 50  0000 C CNN
+F 2 "" V 5205 6850 50  0001 C CNN
+F 3 "~" H 5275 6850 50  0001 C CNN
+	1    5275 6850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E8EA6CB
+P 5075 7425
+F 0 "R?" V 5125 7575 50  0000 C CNN
+F 1 "R" V 5075 7425 50  0000 C CNN
+F 2 "" V 5005 7425 50  0001 C CNN
+F 3 "~" H 5075 7425 50  0001 C CNN
+	1    5075 7425
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E8EA85B
+P 4675 7200
+F 0 "R?" V 4725 7350 50  0000 C CNN
+F 1 "R" V 4675 7200 50  0000 C CNN
+F 2 "" V 4605 7200 50  0001 C CNN
+F 3 "~" H 4675 7200 50  0001 C CNN
+	1    4675 7200
+	0    -1   1    0   
+$EndComp
+$Comp
+L Transistor_BJT:BC558 Q?
+U 1 1 5E8EAA1E
+P 4175 7300
+F 0 "Q?" V 4325 7450 50  0000 C CNN
+F 1 "BC558" V 4400 7300 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4375 7225 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC557.pdf" H 4175 7300 50  0001 L CNN
+	1    4175 7300
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	5275 7400 5275 7425
+Wire Wire Line
+	5225 7425 5275 7425
+Connection ~ 5275 7425
+Wire Wire Line
+	5275 7425 5275 7625
+Wire Wire Line
+	4975 7200 4875 7200
+Wire Wire Line
+	4875 7200 4875 7425
+Wire Wire Line
+	4875 7425 4925 7425
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E931E6A
+P 5275 7625
+F 0 "#PWR?" H 5275 7625 30  0001 C CNN
+F 1 "GND" H 5275 7555 30  0001 C CNN
+F 2 "" H 5275 7625 60  0000 C CNN
+F 3 "" H 5275 7625 60  0000 C CNN
+	1    5275 7625
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4875 7200 4825 7200
+Connection ~ 4875 7200
+Wire Wire Line
+	4375 7200 4450 7200
+$Comp
+L Device:R R?
+U 1 1 5E9749A5
+P 4800 7775
+F 0 "R?" V 4850 7925 50  0000 C CNN
+F 1 "R" V 4800 7775 50  0000 C CNN
+F 2 "" V 4730 7775 50  0001 C CNN
+F 3 "~" H 4800 7775 50  0001 C CNN
+	1    4800 7775
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5E9782CC
+P 3975 7125
+F 0 "#PWR?" H 3975 6975 50  0001 C CNN
+F 1 "+3.3VA" H 3975 7300 50  0000 C CNN
+F 2 "" H 3975 7125 50  0001 C CNN
+F 3 "" H 3975 7125 50  0001 C CNN
+	1    3975 7125
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 7200 4450 7900
+Wire Wire Line
+	4450 7900 2975 7900
+Wire Wire Line
+	2975 7500 2975 7900
+Connection ~ 4450 7200
+Wire Wire Line
+	4450 7200 4525 7200
+Wire Wire Line
+	3975 7125 3975 7200
+Wire Wire Line
+	4175 7775 4650 7775
+Wire Wire Line
+	4175 7500 4175 7775
+Wire Wire Line
+	4475 6650 5275 6650
+Wire Wire Line
+	5275 6700 5275 6650
+Connection ~ 5275 6650
+Wire Wire Line
+	5275 6650 5675 6650
+Wire Wire Line
+	5675 7025 5675 6900
+Connection ~ 5675 6650
+Wire Wire Line
+	5675 6650 6225 6650
+Wire Wire Line
+	5675 7325 5675 7450
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5EA97B19
+P 5675 7625
+F 0 "#PWR?" H 5675 7625 30  0001 C CNN
+F 1 "GND" H 5675 7555 30  0001 C CNN
+F 2 "" H 5675 7625 60  0000 C CNN
+F 3 "" H 5675 7625 60  0000 C CNN
+	1    5675 7625
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 7775 5100 7775
+Wire Wire Line
+	5675 6900 5775 6900
+Connection ~ 5675 6900
+Wire Wire Line
+	5675 6900 5675 6650
+Wire Wire Line
+	5675 7450 5775 7450
+Connection ~ 5675 7450
+Wire Wire Line
+	5675 7450 5675 7625
+Text GLabel 5775 6900 2    50   Input ~ 0
+Akku+
+Wire Wire Line
+	6225 6650 6225 6800
+Connection ~ 6225 6650
+Wire Wire Line
+	6225 6650 6550 6650
+$Comp
+L Device:R R?
+U 1 1 5EB19A88
+P 6225 6950
+F 0 "R?" V 6275 7100 50  0000 C CNN
+F 1 "R" V 6225 6950 50  0000 C CNN
+F 2 "" V 6155 6950 50  0001 C CNN
+F 3 "~" H 6225 6950 50  0001 C CNN
+	1    6225 6950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EB19CA9
+P 6225 7375
+F 0 "R?" V 6275 7525 50  0000 C CNN
+F 1 "R" V 6225 7375 50  0000 C CNN
+F 2 "" V 6155 7375 50  0001 C CNN
+F 3 "~" H 6225 7375 50  0001 C CNN
+	1    6225 7375
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6225 7225 6225 7150
+Wire Wire Line
+	6225 7525 6225 7600
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5EB3F5F3
+P 6225 7600
+F 0 "#PWR?" H 6225 7600 30  0001 C CNN
+F 1 "GND" H 6225 7530 30  0001 C CNN
+F 2 "" H 6225 7600 60  0000 C CNN
+F 3 "" H 6225 7600 60  0000 C CNN
+	1    6225 7600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6225 7150 6425 7150
+Connection ~ 6225 7150
+Wire Wire Line
+	6225 7150 6225 7100
+Wire Wire Line
+	1850 6650 1850 5475
+Wire Wire Line
+	1850 5475 3200 5475
+Connection ~ 1850 6650
+Wire Wire Line
+	1850 6650 1700 6650
+Wire Wire Line
+	2975 5775 2975 5950
+Wire Wire Line
+	2975 5775 3200 5775
+Wire Notes Line
+	3125 5900 4775 5900
+Wire Notes Line
+	4775 5900 4775 5375
+Wire Notes Line
+	4775 5375 3125 5375
+Wire Notes Line
+	3125 5375 3125 5900
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5EC04B54
+P 2975 5950
+F 0 "#PWR?" H 2975 5950 30  0001 C CNN
+F 1 "GND" H 2975 5880 30  0001 C CNN
+F 2 "" H 2975 5950 60  0000 C CNN
+F 3 "" H 2975 5950 60  0000 C CNN
+	1    2975 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:DIODE D?
+U 1 1 5EC092DD
+P 6675 5475
+F 0 "D?" H 6800 5525 50  0000 C CNN
+F 1 "DIODE" H 6675 5350 50  0000 C CNN
+F 2 "" H 6675 5475 50  0001 C CNN
+F 3 "~" H 6675 5475 50  0001 C CNN
+F 4 "Y" H 6675 5475 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 6675 5475 50  0001 L CNN "Spice_Primitive"
+	1    6675 5475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4675 5475 6225 5475
+Wire Wire Line
+	6825 5475 7200 5475
+Wire Wire Line
+	7200 5475 7200 6650
+Wire Wire Line
+	7200 6650 6850 6650
+Connection ~ 7200 6650
+Wire Wire Line
+	6225 5475 6225 5625
+$Comp
+L Device:R R?
+U 1 1 5EC455FA
+P 6225 5775
+F 0 "R?" V 6275 5925 50  0000 C CNN
+F 1 "R" V 6225 5775 50  0000 C CNN
+F 2 "" V 6155 5775 50  0001 C CNN
+F 3 "~" H 6225 5775 50  0001 C CNN
+	1    6225 5775
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EC45600
+P 6225 6200
+F 0 "R?" V 6275 6350 50  0000 C CNN
+F 1 "R" V 6225 6200 50  0000 C CNN
+F 2 "" V 6155 6200 50  0001 C CNN
+F 3 "~" H 6225 6200 50  0001 C CNN
+	1    6225 6200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6225 6050 6225 5975
+Wire Wire Line
+	6225 6350 6225 6425
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5EC45608
+P 6225 6425
+F 0 "#PWR?" H 6225 6425 30  0001 C CNN
+F 1 "GND" H 6225 6355 30  0001 C CNN
+F 2 "" H 6225 6425 60  0000 C CNN
+F 3 "" H 6225 6425 60  0000 C CNN
+	1    6225 6425
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6225 5975 6400 5975
+Connection ~ 6225 5975
+Wire Wire Line
+	6225 5975 6225 5925
+Connection ~ 6225 5475
+Wire Wire Line
+	6225 5475 6525 5475
+Wire Wire Line
+	7200 6650 7750 6650
+$Comp
+L Isolator:SFH617A-1 U?
+U 1 1 5EC89F83
+P 8875 7125
+F 0 "U?" H 8925 6850 50  0000 C CNN
+F 1 "SFH617A-1" H 8850 6925 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 8675 6925 50  0001 L CIN
+F 3 "http://www.vishay.com/docs/83740/sfh617a.pdf" H 8875 7125 50  0001 L CNN
+	1    8875 7125
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8575 6250 8575 7025
+Wire Wire Line
+	8575 7225 8575 7350
+$Comp
+L Device:R R?
+U 1 1 5ECF20CE
+P 9425 7025
+F 0 "R?" V 9475 7175 50  0000 C CNN
+F 1 "R" V 9425 7025 50  0000 C CNN
+F 2 "" V 9355 7025 50  0001 C CNN
+F 3 "~" H 9425 7025 50  0001 C CNN
+	1    9425 7025
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9175 7025 9275 7025
+Wire Wire Line
+	9175 7225 9475 7225
+$Comp
+L power:+12C #PWR?
+U 1 1 5ED3868C
+P 10600 6325
+F 0 "#PWR?" H 10600 6175 50  0001 C CNN
+F 1 "+12C" V 10600 6550 50  0000 C CNN
+F 2 "" H 10600 6325 50  0001 C CNN
+F 3 "" H 10600 6325 50  0001 C CNN
+	1    10600 6325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12P #PWR?
+U 1 1 5ED7E089
+P 9100 6325
+F 0 "#PWR?" H 9100 6175 50  0001 C CNN
+F 1 "+12P" V 9100 6600 50  0000 C CNN
+F 2 "" H 9100 6325 50  0001 C CNN
+F 3 "" H 9100 6325 50  0001 C CNN
+	1    9100 6325
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12P #PWR?
+U 1 1 5ED7E5AA
+P 12775 975
+F 0 "#PWR?" H 12775 825 50  0001 C CNN
+F 1 "+12P" V 12775 1250 50  0000 C CNN
+F 2 "" H 12775 975 50  0001 C CNN
+F 3 "" H 12775 975 50  0001 C CNN
+	1    12775 975 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12P #PWR?
+U 1 1 5ED850D6
+P 12625 2550
+F 0 "#PWR?" H 12625 2400 50  0001 C CNN
+F 1 "+12P" V 12625 2825 50  0000 C CNN
+F 2 "" H 12625 2550 50  0001 C CNN
+F 3 "" H 12625 2550 50  0001 C CNN
+	1    12625 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12P #PWR?
+U 1 1 5ED87CB3
+P 12675 3975
+F 0 "#PWR?" H 12675 3825 50  0001 C CNN
+F 1 "+12P" V 12675 4250 50  0000 C CNN
+F 2 "" H 12675 3975 50  0001 C CNN
+F 3 "" H 12675 3975 50  0001 C CNN
+	1    12675 3975
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12P #PWR?
+U 1 1 5EDCF5BF
+P 12975 7350
+F 0 "#PWR?" H 12975 7200 50  0001 C CNN
+F 1 "+12P" V 12975 7625 50  0000 C CNN
+F 2 "" H 12975 7350 50  0001 C CNN
+F 3 "" H 12975 7350 50  0001 C CNN
+	1    12975 7350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12975 7350 13150 7350
+Wire Wire Line
+	13150 7350 13150 7425
+Text Notes 2425 5450 0    50   ~ 0
+DCDC Wandler
+Text Notes 6500 5950 0    50   ~ 0
+U Mess PSU
+Text Notes 7525 2750 0    50   ~ 0
+U Mess Akku
+Text Notes 5025 7950 0    50   ~ 0
+Akku Test auslösen \naktiv  low
+Wire Wire Line
+	9575 7025 9725 7025
+Wire Wire Line
+	9725 7025 9725 6975
+Connection ~ 8675 6650
+Wire Wire Line
+	8675 6650 10125 6650
+Wire Wire Line
+	10600 6525 10600 6325
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E75A0BE
+P 9925 6750
+F 0 "#PWR?" H 9925 6750 30  0001 C CNN
+F 1 "GND" H 9925 6680 30  0001 C CNN
+F 2 "" H 9925 6750 60  0000 C CNN
+F 3 "" H 9925 6750 60  0000 C CNN
+	1    9925 6750
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line
+	9825 6100 10425 6100
+Wire Notes Line
+	10425 6100 10425 5575
+Wire Notes Line
+	10425 5575 9825 5575
+Wire Notes Line
+	9825 5575 9825 6100
+Text Notes 9850 5775 0    50   ~ 0
+High-side \nswitch
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5E789423
+P 9725 6975
+F 0 "#PWR?" H 9725 6825 50  0001 C CNN
+F 1 "+3.3VA" V 9650 7025 50  0000 C CNN
+F 2 "" H 9725 6975 50  0001 C CNN
+F 3 "" H 9725 6975 50  0001 C CNN
+	1    9725 6975
+	-1   0    0    -1  
+$EndComp
+Text Notes 7525 5500 0    50   ~ 0
+PSU\nOlimex ESP32\n
+Text Notes 8500 5525 0    50   ~ 0
+PSU\nTüre
+Text Notes 9825 5525 0    50   ~ 0
+PSU\niButton Client
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5E7A9684
+P 3400 5575
+F 0 "J?" H 3425 5575 50  0000 L CNN
+F 1 "PSUin" H 3425 5475 50  0000 L CNN
+F 2 "" H 3400 5575 50  0001 C CNN
+F 3 "~" H 3400 5575 50  0001 C CNN
+	1    3400 5575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 5575 3200 5475
+Connection ~ 3200 5475
+Wire Wire Line
+	3200 5675 3200 5775
+Connection ~ 3200 5775
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5E7D693C
+P 4475 5575
+F 0 "J?" H 4525 5575 50  0000 C CNN
+F 1 "PSUout" H 4650 5475 50  0000 C CNN
+F 2 "" H 4475 5575 50  0001 C CNN
+F 3 "~" H 4475 5575 50  0001 C CNN
+	1    4475 5575
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4675 5575 4675 5475
+Connection ~ 4675 5475
+Wire Wire Line
+	4675 5675 4675 5775
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E849B50
+P 4900 5950
+F 0 "#PWR?" H 4900 5950 30  0001 C CNN
+F 1 "GND" H 4900 5880 30  0001 C CNN
+F 2 "" H 4900 5950 60  0000 C CNN
+F 3 "" H 4900 5950 60  0000 C CNN
+	1    4900 5950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4675 5775 4900 5775
+Wire Wire Line
+	4900 5775 4900 5950
+Connection ~ 4675 5775
+Text Notes 7525 1750 0    50   ~ 0
+UART
+Text Notes 7525 1850 0    50   ~ 0
+UART
+Text Notes 7525 2050 0    50   ~ 0
+ISP
+Text Notes 7525 2150 0    50   ~ 0
+ISP
+Text Notes 7525 2250 0    50   ~ 0
+ISP
+Text Label 6925 7150 0    50   ~ 0
+PC1
+Text Label 7000 5975 0    50   ~ 0
+PC0
+$Comp
+L Device:D_Zener D?
+U 1 1 5E978915
+P 6425 7375
+F 0 "D?" V 6325 7400 50  0000 L CNN
+F 1 "3V0" V 6550 7400 50  0000 L CNN
+F 2 "" H 6425 7375 50  0001 C CNN
+F 3 "~" H 6425 7375 50  0001 C CNN
+	1    6425 7375
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6425 7225 6425 7150
+Connection ~ 6425 7150
+Wire Wire Line
+	6425 7150 6675 7150
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E99058C
+P 6425 7600
+F 0 "#PWR?" H 6425 7600 30  0001 C CNN
+F 1 "GND" H 6425 7530 30  0001 C CNN
+F 2 "" H 6425 7600 60  0000 C CNN
+F 3 "" H 6425 7600 60  0000 C CNN
+	1    6425 7600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6425 7600 6425 7525
+$Comp
+L Device:D_Zener D?
+U 1 1 5E9F614A
+P 6400 6200
+F 0 "D?" V 6300 6225 50  0000 L CNN
+F 1 "3V0" V 6500 6225 50  0000 L CNN
+F 2 "" H 6400 6200 50  0001 C CNN
+F 3 "~" H 6400 6200 50  0001 C CNN
+	1    6400 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5E9F7855
+P 6400 6425
+F 0 "#PWR?" H 6400 6425 30  0001 C CNN
+F 1 "GND" H 6400 6355 30  0001 C CNN
+F 2 "" H 6400 6425 60  0000 C CNN
+F 3 "" H 6400 6425 60  0000 C CNN
+	1    6400 6425
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 6050 6400 5975
+Connection ~ 6400 5975
+Wire Wire Line
+	6400 5975 6675 5975
+Wire Wire Line
+	6400 6350 6400 6425
+Text Notes 7525 2650 0    50   ~ 0
+U Mess PSU
+Text Notes 7525 2350 0    50   ~ 0
+Quarz
+Text Notes 7525 2450 0    50   ~ 0
+Quarz
+Text Notes 7525 4050 0    50   ~ 0
+Spannung Türe einschalten
+Text Notes 7525 3250 0    50   ~ 0
+Reset Funktion
+Text Notes 7525 2850 0    50   ~ 0
+Drücker betätigt
+Text Notes 7525 2950 0    50   ~ 0
+Riegel EINgefahren 
+Text Notes 7525 3050 0    50   ~ 0
+Riegel AUSgefahren 
+Text Notes 7525 3450 0    50   ~ 0
+DC out Schloss / E-Öffner 1
+Text Notes 7525 3550 0    50   ~ 0
+DC out Schloss / E-Öffner 2
+Text Notes 7525 3650 0    50   ~ 0
+freie Funktion
+Text Notes 7525 3750 0    50   ~ 0
+Klingel out
+Text Notes 7525 3850 0    50   ~ 0
+Akku Test auslösen 
+Text Label 5100 7775 0    50   ~ 0
+PD4
+Text Label 10850 7025 0    50   ~ 0
+PD5
+Text Notes 7525 3950 0    50   ~ 0
+Spannung iButton Client
+Text Notes 7525 3150 0    50   ~ 0
+Anforderung vom Master log 0
+Text Notes 7550 4150 0    50   ~ 0
+*/*
+Text Notes 7550 1950 0    50   ~ 0
+*/*
+Text Notes 2975 2775 0    50   ~ 0
+Empfang Bus Daten 
+Text Notes 2975 2875 0    50   ~ 0
+Senden Bus Daten 
+$Comp
+L Device:C_Small C?
+U 1 1 5EC05D3A
+P 6675 7375
+F 0 "C?" H 6767 7421 50  0000 L CNN
+F 1 "C_Small" H 6767 7330 50  0000 L CNN
+F 2 "" H 6675 7375 50  0001 C CNN
+F 3 "~" H 6675 7375 50  0001 C CNN
+	1    6675 7375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EC05F6E
+P 6675 6200
+F 0 "C?" H 6767 6246 50  0000 L CNN
+F 1 "C_Small" H 6767 6155 50  0000 L CNN
+F 2 "" H 6675 6200 50  0001 C CNN
+F 3 "~" H 6675 6200 50  0001 C CNN
+	1    6675 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6675 6100 6675 5975
+Connection ~ 6675 5975
+Wire Wire Line
+	6675 5975 7000 5975
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5EC21852
+P 6675 6425
+F 0 "#PWR?" H 6675 6425 30  0001 C CNN
+F 1 "GND" H 6675 6355 30  0001 C CNN
+F 2 "" H 6675 6425 60  0000 C CNN
+F 3 "" H 6675 6425 60  0000 C CNN
+	1    6675 6425
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6675 6425 6675 6300
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5EC3C156
+P 6675 7600
+F 0 "#PWR?" H 6675 7600 30  0001 C CNN
+F 1 "GND" H 6675 7530 30  0001 C CNN
+F 2 "" H 6675 7600 60  0000 C CNN
+F 3 "" H 6675 7600 60  0000 C CNN
+	1    6675 7600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6675 7275 6675 7150
+Connection ~ 6675 7150
+Wire Wire Line
+	6675 7150 6925 7150
+Wire Wire Line
+	6675 7600 6675 7475
+$Comp
+L Connector:Conn_01x05_Female J?
+U 1 1 5ECF0A0C
+P 10125 6050
+F 0 "J?" V 10275 6200 50  0000 R CNN
+F 1 "BTS462" V 10175 6225 50  0000 R CNN
+F 2 "" H 10125 6050 50  0001 C CNN
+F 3 "~" H 10125 6050 50  0001 C CNN
+	1    10125 6050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10125 6250 10125 6650
+Wire Wire Line
+	10325 6250 10325 6525
+Wire Wire Line
+	10325 6525 10600 6525
+Wire Wire Line
+	9925 6250 9925 6750
+$Comp
+L Device:R R?
+U 1 1 5EDBC9ED
+P 10575 7025
+F 0 "R?" V 10625 7175 50  0000 C CNN
+F 1 "R" V 10575 7025 50  0000 C CNN
+F 2 "" V 10505 7025 50  0001 C CNN
+F 3 "~" H 10575 7025 50  0001 C CNN
+	1    10575 7025
+	0    -1   1    0   
+$EndComp
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5EE09F99
+P 10025 7325
+F 0 "#PWR?" H 10025 7325 30  0001 C CNN
+F 1 "GND" H 10025 7255 30  0001 C CNN
+F 2 "" H 10025 7325 60  0000 C CNN
+F 3 "" H 10025 7325 60  0000 C CNN
+	1    10025 7325
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10025 7225 10025 7325
+Wire Wire Line
+	10025 6250 10025 6475
+$Comp
+L Device:R R?
+U 1 1 5EE3D5DE
+P 9675 6225
+F 0 "R?" V 9725 6375 50  0000 C CNN
+F 1 "R" V 9675 6225 50  0000 C CNN
+F 2 "" V 9605 6225 50  0001 C CNN
+F 3 "~" H 9675 6225 50  0001 C CNN
+	1    9675 6225
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	9675 6375 9675 6475
+Wire Wire Line
+	9675 6475 10025 6475
+Connection ~ 10025 6475
+Wire Wire Line
+	10025 6475 10025 6825
+Wire Wire Line
+	9675 6075 9675 5950
+$Comp
+L power:+3.3VA #PWR?
+U 1 1 5EE716A7
+P 9675 5950
+F 0 "#PWR?" H 9675 5800 50  0001 C CNN
+F 1 "+3.3VA" V 9600 6000 50  0000 C CNN
+F 2 "" H 9675 5950 50  0001 C CNN
+F 3 "" H 9675 5950 50  0001 C CNN
+	1    9675 5950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10725 7025 10850 7025
+$Comp
+L Transistor_BJT:BC546 Q?
+U 1 1 5EE8BCF6
+P 10125 7025
+F 0 "Q?" H 9950 7100 50  0000 L CNN
+F 1 "BC546" H 9875 7200 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10325 6950 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 10125 7025 50  0001 L CNN
+	1    10125 7025
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10325 7025 10425 7025
+Text Notes 10525 7175 0    50   ~ 0
+aktiv log low 
+Text Notes 9325 7325 0    50   ~ 0
+aktiv log low 
+Text GLabel 10225 6250 3    50   Input ~ 0
+NC
+Text Notes 12225 2000 0    50   ~ 0
+aktiv high 
+Text Notes 12250 3550 0    50   ~ 0
+aktiv high 
+Text Notes 12150 5075 0    50   ~ 0
+aktiv high 
+Text Notes 12200 8375 0    50   ~ 0
+aktiv high 
+$Comp
+L Device:D_TVS D?
+U 1 1 5EF796DC
+P 4700 10075
+F 0 "D?" V 4750 10150 50  0000 L CNN
+F 1 "D_TVS" V 5025 9975 50  0000 L CNN
+F 2 "" H 4700 10075 50  0001 C CNN
+F 3 "~" H 4700 10075 50  0001 C CNN
+	1    4700 10075
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D_TVS D?
+U 1 1 5EF798D3
+P 4950 10075
+F 0 "D?" V 5000 10150 50  0000 L CNN
+F 1 "D_TVS" V 5275 10000 50  0000 L CNN
+F 2 "" H 4950 10075 50  0001 C CNN
+F 3 "~" H 4950 10075 50  0001 C CNN
+	1    4950 10075
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 9500 4700 9500
+Wire Wire Line
+	4300 9800 4950 9800
+Wire Wire Line
+	4700 9925 4700 9500
+Connection ~ 4700 9500
+Wire Wire Line
+	4700 9500 4950 9500
+Wire Wire Line
+	4950 9925 4950 9800
+Connection ~ 4950 9800
+Wire Wire Line
+	4950 9800 5225 9800
+Wire Wire Line
+	4950 9500 4950 9375
+Connection ~ 4950 9500
+Wire Wire Line
+	4950 9500 5325 9500
+Wire Wire Line
+	5225 9800 5225 9375
+Connection ~ 5225 9800
+Wire Wire Line
+	5225 9800 5325 9800
+Wire Wire Line
+	4700 10225 4700 10300
+Wire Wire Line
+	4950 10225 4950 10300
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5F0710B7
+P 4700 10300
+F 0 "#PWR?" H 4700 10300 30  0001 C CNN
+F 1 "GND" H 4700 10230 30  0001 C CNN
+F 2 "" H 4700 10300 60  0000 C CNN
+F 3 "" H 4700 10300 60  0000 C CNN
+	1    4700 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Olimex_Adapter-rescue:GND-L9110 #PWR?
+U 1 1 5F0711D0
+P 4950 10300
+F 0 "#PWR?" H 4950 10300 30  0001 C CNN
+F 1 "GND" H 4950 10230 30  0001 C CNN
+F 2 "" H 4950 10300 60  0000 C CNN
+F 3 "" H 4950 10300 60  0000 C CNN
+	1    4950 10300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5F0AB201
+P 4950 9225
+F 0 "R?" V 5000 9375 50  0000 C CNN
+F 1 "120R" V 4950 9225 50  0000 C CNN
+F 2 "" V 4880 9225 50  0001 C CNN
+F 3 "~" H 4950 9225 50  0001 C CNN
+	1    4950 9225
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5F0AB5E0
+P 5225 9275
+F 0 "JP?" V 5350 9125 50  0000 L CNN
+F 1 "JP" V 5200 9150 50  0000 L CNN
+F 2 "" H 5225 9275 50  0001 C CNN
+F 3 "~" H 5225 9275 50  0001 C CNN
+	1    5225 9275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5225 9175 5225 8925
+Wire Wire Line
+	5225 8925 4950 8925
+Wire Wire Line
+	4950 8925 4950 9075
+$Comp
+L Device:C_Small C?
+U 1 1 5F19F3C3
+P 12775 6550
+F 0 "C?" H 12775 6625 50  0000 L CNN
+F 1 "0,1u" H 12775 6475 50  0000 L CNN
+F 2 "" H 12775 6550 50  0001 C CNN
+F 3 "~" H 12775 6550 50  0001 C CNN
+	1    12775 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F19F510
+P 13200 6550
+F 0 "C?" H 13200 6625 50  0000 L CNN
+F 1 "0,1u" H 13200 6475 50  0000 L CNN
+F 2 "" H 13200 6550 50  0001 C CNN
+F 3 "~" H 13200 6550 50  0001 C CNN
+	1    13200 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F19F77A
+P 13000 6550
+F 0 "C?" H 13000 6625 50  0000 L CNN
+F 1 "0,1u" H 13000 6475 50  0000 L CNN
+F 2 "" H 13000 6550 50  0001 C CNN
+F 3 "~" H 13000 6550 50  0001 C CNN
+	1    13000 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12775 6650 12775 6700
+Wire Wire Line
+	12775 6700 13000 6700
+Wire Wire Line
+	13450 6700 13450 6800
+Wire Wire Line
+	13450 6450 13450 6700
+Connection ~ 13450 6700
+Wire Wire Line
+	13200 6650 13200 6700
+Connection ~ 13200 6700
+Wire Wire Line
+	13200 6700 13450 6700
+Wire Wire Line
+	13000 6650 13000 6700
+Connection ~ 13000 6700
+Wire Wire Line
+	13000 6700 13200 6700
+Wire Wire Line
+	12775 6450 12775 6350
+Connection ~ 12775 6350
+Wire Wire Line
+	12775 6350 12650 6350
+Wire Wire Line
+	12775 6350 14075 6350
+Wire Wire Line
+	13000 6450 13000 6250
+Connection ~ 13000 6250
+Wire Wire Line
+	13000 6250 14075 6250
+Wire Wire Line
+	13200 6450 13200 6150
+Connection ~ 13200 6150
+Wire Wire Line
+	13200 6150 12900 6150
+Wire Notes Line
+	11350 4925 11350 775 
+Wire Notes Line
+	11350 775  1175 775 
+Wire Notes Line
+	1175 775  1175 4925
+Wire Notes Line
+	1175 4925 11350 4925
+Text GLabel 1700 6650 0    50   Input ~ 0
++UB_16V
+Text GLabel 1700 7200 0    50   Input ~ 0
+-UB_16V
+Wire Wire Line
+	1700 7200 2400 7200
+Connection ~ 2400 7200
+Wire Wire Line
+	2400 7200 2400 7450
+Wire Notes Line
+	1225 5150 11400 5175
+Wire Notes Line
+	11400 5175 11400 8125
+Wire Notes Line
+	11400 8150 1175 8150
+Wire Notes Line
+	1175 8150 1175 5150
+Wire Notes Line
+	1175 5150 1250 5150
+Wire Notes Line
+	7275 8550 7275 10650
+Wire Notes Line
+	7275 10650 3575 10650
+Wire Notes Line
+	3575 10650 3575 8550
+Wire Notes Line
+	3575 8550 7275 8550
+Text Notes 14175 11075 0    50   ~ 0
+xportdus@chaosdorf.de
+$EndSCHEMATC
