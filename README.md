@@ -39,13 +39,15 @@ Die Steuerung ist auf zwei Platinen aufgeteilt.
 
 
 ## Elektrisches Schloss
+Das elektrische Schloss kann leider nicht wie ursprünglich als Drückersteuerung genutzt werden. Daher soll hier ein Motor an den Zylinder angeschlossen werden (im Augenblick ist da ein Motor von Abus verbaut)
+
 
 Drückersteuerung (Modell 709X/809®)
 Schlösser mit Drückersteuerung bieten durch den gesteuerten Außendrücker eine ideale Kombination von Zutrittskontrolle und Fluchtweg.
 Bei diesen Schlössern werden innen und außen Türdrücker zur Bedienung eingesetzt. Die Schlossnuss ist geteilt und somit ergeben sich für Innen und Außen unterschiedliche Bedienung.
 Der Innendrücker ist dabei immer fest mit dem Schlossmechanismus verbunden und erlaubt somit ein Entriegeln des Schlosses und ein Öffnen der Tür von innen, damit Personen den Bereich oder das Gebäude verlassen können.
 Der Außendrücker ist freilaufend, d. h. durch Betätigung des Außendrückers wird das Schloss nicht entriegelt und die Tür kann somit auch nicht geöffnet werden.
-Die Ansteuerung des Schlosses erfolgt durch das Aufschalten der Betriebsspannung 12V DC oder 24V DC (je nach Variante), z. B. durch Zutrittskontrolle, Zeitschaltuhr. Gebäudeleittechnik usw. Dadurch wird im Detail der Außendrücker (Außendrückernuss) mit dem Innendrücker (Innendrückernuss) gekoppelt. Betätigt man nun den Außendrücker wird der (die) Riegel und die Falle zurückgezogen, bzw. die Kreuzfalle beweglich, und ein Zugang von Außen nach Innen ist für berechtigte Personen möglich.
+Die Ansteuerung des Schlosses erfolgt durch das Aufschalten der Betriebsspannung 12V DC oder 24V DC (je nach Variante), z. B. durch Zutrittskontrolle, Zeitschaltuhr. Gebäudeleittechnik usw. Dadurch wird im Detail der Außendrücker (Außendrückernuss) mit dem Innendrücker (Innendrückernuss) gekoppelt. Betätigt man nun den Außendrücker wird der (die) Riegel und die Falle zurückgezogen, bzw. die Kreuzfalle beweglich, und ein Zugang von Außen nach Innen 16ist für berechtigte Personen möglich.
 Man unterscheidet zwei Versionen:
 Schloss mit Panikfunktion: Drückernuss geteilt, Außendrücker elektrisch gesteuert
 Schloss ohne Panikfunktion: Drückernuss durchgehend, beide Drücker elektrisch gesteuert_
