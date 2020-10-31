@@ -27,9 +27,9 @@ void loop(){
  
   // Check if this is a iButton
   if ( buffer[0] != 0x01) {
-    Serial.println("Device is not a iButton");
+    Serial.println("Device is not an iButton");
   } else {
-    Serial.println("Device is a iButton");
+    Serial.println("Device is an iButton");
   }
  
   if ( ibutton.crc8( buffer, 7) != buffer[7]) {
