@@ -10,6 +10,7 @@ Mitglieder können mit ihrem iButton oder SSH-Key die Tür temporär öffnen.
 
 (public schalten wie im alten Dorf ist in diesem Haus wohl leider unpraktikabel.)
 
+Einzelne Menschen sind in der Lage, Schlüssel zu registrieren und zu revoken.
 
 ## Hardware
 
@@ -18,7 +19,7 @@ Fürs Erste haben wir eine Minimallösung vor mit nur einer Platine mit einem ES
 - speichert die iButton-IDs
 - steuert die Aktoren an 12V Output
 - Unlock über WiFi (SSH-Emulation)
-- Update der IDs über MQTT
+- Update der IDs über Git
 - gute Rust-Unterstützung
 
 <details>
@@ -55,7 +56,7 @@ Fürs Erste haben wir eine Minimallösung vor mit nur einer Platine mit einem ES
 </detail>
 
 
-## Elektrisches Schloss
+### Elektrisches Schloss
 Unsere Tür hat drei Modi:
  * zu (Panikfunktion)
  * Summer
@@ -65,3 +66,31 @@ Wir hatten überlegt, einen Motor an den Schlosszylinder anzuschließen, um zwis
 (Bei unserem Versuch mit einem Abus-Motor stand dann allerdings die Tür offen, weil sich der Motor unbedingt neu kalibrieren musste.)
 
 Deswegen ist es wohl am einfachsten, die Tür einfach in dem Summer-Zustand zu lassen.
+
+## Software
+
+### Schlüsselspeicherung
+
+Die Schlüssel liegen als Dateien in einem Git-Repo vor:
+
+Es gibt beliebig viele `username-description.key`-Dateien,
+die jeweils eine Zeile mit einer iButton-ID bzw. einem SSH-Key enthalten, z.B.:
+
+```
+ssh-ed22519 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+```
+
+```
+iButton 1234567890
+```
+
+Sie ist ist signiert (minisign) von der ausstellenden Person und verschlüsselt (age) mit
+ * einem gemeinsamen Public-Key
+ * allen Public-Keys der Menschen aus dem Schlüssel-Team (diese sind auch im Repo hinterlegt)
+
+Irgendwo läuft eine Software, die sich diese Änderungen zieht,
+die die Dateien entschlüsselt und verifiziert und dann einen großen Blob erzeugt
+und den verschlüsselt (mit libhydrogen).
+Der ESP zieht sich davon regelmäßig die neueste Version.
+
+Bis diese Software existiert, wird die große Schlüsselliste manuell geführt.
