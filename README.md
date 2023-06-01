@@ -1,8 +1,14 @@
 # Access control system 4 
 
-Die Türsteuerung für die Türen im neuen Dorf auf der Sonnenstraße.
+Die (geplante) Türsteuerung für die Türen im neuen Dorf auf der Sonnenstraße.
 
-https://github.com/chaosdorf/sonnenstr58/issues/8
+## Benutzung
+
+Gäste können die Klingel betätigen, dann klingelt es.
+
+Mitglieder können mit ihrem iButton oder SSH-Key die Tür temporär öffnen.
+
+(public schalten wie im alten Dorf ist in diesem Haus wohl leider unpraktikabel.)
 
 
 ## Hardware
