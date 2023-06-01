@@ -6,11 +6,21 @@ https://github.com/chaosdorf/sonnenstr58/issues/8
 
 
 ## Hardware
-Die Steuerung ist auf zwei Platinen aufgeteilt. 
+
+Fürs Erste haben wir eine Minimallösung vor mit nur einer Platine mit einem ESP32-C3:
+
+- speichert die iButton-IDs
+- steuert die Aktoren an 12V Output
+- Unlock über WiFi (SSH-Emulation)
+- Update der IDs über MQTT
+- gute Rust-Unterstützung
+
+<details>
+<summary>Die vollständige Lösung sollte auf zwei Platinen aufgeteilt sein:</summary>
 
 [Blockschaltbild](src/Blockbild_Uebersicht_rev04.pdf)
 
-### Master-Board
+### Server-Board
 - Steuert die Aktoren an 12V Output
 - Speichert die iButton IDs auf einer SD
 - Ethernet nutzt ein Olimex Board ESP32 rev E
@@ -24,7 +34,7 @@ Die Steuerung ist auf zwei Platinen aufgeteilt.
 [ESP32 Gateway Schematic rev E](src/ESP32-GATEWAY_Rev_E_color.pdf)
 
 
-### Slave-Board
+### Client-Board
 - iButton Reader
 - LED Output
 - Klingel Taster input 1
@@ -32,9 +42,11 @@ Die Steuerung ist auf zwei Platinen aufgeteilt.
 - Display output für eInk
 - WS2812 LED Output
 
+(jeweils für Außen- und Innentür)
+
 [Waveshare eInk - Shop](https://eckstein-shop.de/Waveshare-27-inch-264x176-E-Ink-E-Paper-Raw-Display-three-color-Arduino)
 
-
+</detail>
 
 
 ## Elektrisches Schloss
